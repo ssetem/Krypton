@@ -10,7 +10,7 @@ module.exports = ()->
   }
 
   ioc.registerFolders __dirname, [
-    "fixtures"
+    "page-objects"
   ]
 
   ioc
