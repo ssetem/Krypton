@@ -5,5 +5,5 @@ module.exports = (Element, QAS, ItemList) ->
     selector: QAS "chat-box"
 
     constructor: ->
-      @component "messages", ItemList, selector: QAS "messages", itemSelector: QAS "message"
+      @component "messages", ItemList, selector: QAS("messages"), itemSelector: QAS("message")
       super

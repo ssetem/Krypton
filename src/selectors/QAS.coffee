@@ -5,4 +5,4 @@ module.exports = ->
     constructor: (@selector) ->
     
     toCSS: ->
-      "[data-qa=#{@selector}] "
+      "[data-qa='#{@selector}'] "
