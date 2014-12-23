@@ -1,0 +1,44 @@
+{
+  "name": "Krypton",
+  "description": "todo",
+  "keywords": [
+    "selenium",
+    "webdriverjs",
+    "webdriver",
+    "testing",
+    "page objects"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Krypton-framework/Krypton.git"
+  },
+  "author": {
+    "name": "Joseph McElroy",
+    "email": "joe@teneleven.co.uk"
+  },
+  "version": "0.1.0",
+  "main": "./lib",
+  "license": "MIT",
+  "dependencies": {
+    "spur-ioc": "latest",
+    "bluebird": "^2.3.11",
+    "lodash": "^2.4.1",
+    "coffee-script": "^1.8.0",
+    "cli": "0.6.5",
+    "request": "latest",
+    "sinon": "latest"
+  },
+  "scripts": {
+    "test": "mocha --opts ./test/mocha.opts ./test/unit",
+    "test-watch": "mocha --watch --opts ./test/mocha.opts ./test/unit"
+  },
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "express": "~3.3.4",
+    "gulp": "3.8.10",
+    "gulp-coffee": "^2.2.0",
+    "gulp-concat": "^2.4.2",
+    "gulp-protractor": "0.0.12",
+    "mocha": "^2.0.1"
+  }
+}
