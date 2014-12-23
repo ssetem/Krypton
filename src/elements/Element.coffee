@@ -1,6 +1,8 @@
-module.exports = (ElementStates) ->
+module.exports = () ->
 
   class Element
 
-    constructor: (parentElement) ->
+    constructor: (@parentComponent) ->
+
+    component: (name, component, options) ->
       
