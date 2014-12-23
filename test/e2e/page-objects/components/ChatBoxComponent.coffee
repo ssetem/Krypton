@@ -1,4 +1,4 @@
-modules.export = (Element, QAS) ->
+module.exports = (Element, QAS, ItemList) ->
 
   class ChatBoxComponent extends Element
 
