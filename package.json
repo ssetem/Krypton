@@ -1,5 +1,5 @@
 {
-  "name": "Krypton",
+  "name": "krypton-js",
   "description": "todo",
   "keywords": [
     "selenium",
@@ -10,12 +10,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Krypton-framework/Krypton.git"
+    "url": "https://github.com/Kryptonjs/Krypton.git"
   },
-  "author": {
-    "name": "Joseph McElroy",
-    "email": "joe@teneleven.co.uk"
-  },
+  "author": "Joseph McElroy <joe@teneleven.co.uk>",
   "version": "0.1.0",
   "main": "./lib",
   "license": "MIT",
@@ -40,5 +37,12 @@
     "gulp-concat": "^2.4.2",
     "gulp-protractor": "0.0.12",
     "mocha": "^2.0.1"
+  },
+  "bugs": {
+    "url": "https://github.com/Krypton-framework/Krypton/issues"
+  },
+  "homepage": "https://github.com/Krypton-framework/Krypton",
+  "directories": {
+    "test": "test"
   }
 }
