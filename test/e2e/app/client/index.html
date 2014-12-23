@@ -17,7 +17,9 @@
       </form>
 
       <div id="chat-box" ng-show="user" data-qa="chat-box">
-        <div ng-repeat="msg in messages track by $index" data-qa="message">{{msg}}</div>
+        <div data-qa="messages">
+          <div ng-repeat="msg in messages track by $index" data-qa="message">{{msg}}</div>
+        </div>
       </div>
 
       <form ng-show="user" data-qa="chat-form">
