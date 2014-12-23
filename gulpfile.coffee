@@ -3,18 +3,21 @@ concat = require 'gulp-concat'
 gulp = require 'gulp'
 protractor = require("gulp-protractor").protractor
 
-
-gulp.task 'coffee', ->
-  gulp.src("./src/*.coffee")
-    .pipe(coffee(bare:true).on('error', gutil.log))
-    .pipe(gulp.dest("./lib"))
+paths = {
+  e2e: "./test/e2e/specs/*Spec.coffee"
+  framework: "./src/**/*"
+}
 
 gulp.task 'e2e', ()->
-  gulp.src(["./test/e2e/specs/*Spec.coffee"])
+  gulp.src([paths.e2e])
     .pipe(protractor({
       configFile: "test/config/protractor.conf.js"
     })) 
     .on('error', (e) -> throw e )
 
+gulp.task 'watch', ->
+  gulp.watch(paths.e2e, ['e2e'])
+  gulp.watch(paths.framework, ['e2e'])
 
-gulp.task 'default', ['coffee']
+
+gulp.task 'default', ['watch']
