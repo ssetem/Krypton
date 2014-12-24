@@ -2,6 +2,6 @@ module.exports = ->
 
   class CanType
 
-    constructor: ->
+    type: (text) ->
 
     

@@ -2,4 +2,5 @@ module.exports = ->
 
   class CanClick
 
-    constructor: ->
+    click: ->
+
