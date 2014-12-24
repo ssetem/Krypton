@@ -2,7 +2,13 @@ module.exports = ->
 
   class CSSS
 
-    constructor: (@selector) ->
-    
+    @create: (css)->
+      new CSSS(css)
+
+    constructor: (css) ->
+      @cssSelector = "#{css} "
+
     toCSS: ->
-      "#{@selector} "
+      @cssSelector
+
+  CSSS.create

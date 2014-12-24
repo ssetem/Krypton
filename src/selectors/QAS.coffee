@@ -2,7 +2,13 @@ module.exports = ->
 
   class QAS
 
-    constructor: (@selector) ->
-    
+    @create: (name)->
+      new QAS(name)
+
+    constructor: (name) ->
+      @cssSelector = "[data-qa='#{name}'] "
+
     toCSS: ->
-      "[data-qa='#{@selector}'] "
+      @cssSelector
+
+  QAS.create
