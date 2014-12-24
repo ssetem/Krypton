@@ -15,7 +15,6 @@ module.exports = ()->
   ioc.registerFolders __dirname, [
     "elements"
     "selectors"
-    "states"
     "core"
   ]
 

@@ -1,5 +1,6 @@
 module.exports = ->
 
-  class CanClick
+  new class CanClick
 
-    constructor: ->
+    click:()->
+      console.log "click", @

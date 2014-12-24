@@ -1,4 +1,4 @@
-module.exports = (Page, UserFormComponent, ChatBoxComponent, ChatFormComponent) ->
+module.exports = (Page, UserFormComponent, ChatBoxComponent, ChatFormComponent, QAS) ->
 
   class ChatPage extends Page
 

@@ -1,4 +1,4 @@
-module.exports = (Element, Input) ->
+module.exports = (Element, Input, QAS, Button) ->
 
   class ChatFormComponent extends Element
 

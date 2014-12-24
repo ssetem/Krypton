@@ -1,7 +1,10 @@
 module.exports = ->
 
-  class CanType
+  new class CanType
 
-    constructor: ->
+    type:(val)->
+      console.log "type", @, val
 
-    
+
+
+
