@@ -1,7 +1,7 @@
 describe "Utils", ->
 
   beforeEach ->
-    injector().inject (@Utils) =>
+    kryptonInjector().inject (@Utils) =>
       
 
   it "extends()", ->
