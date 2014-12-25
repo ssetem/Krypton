@@ -1,6 +1,7 @@
 module.exports = ->
 
-  class HasText
+  new class HasText
 
-    hasText: (text) ->
+    getText:()->
+      console.log "getText", @
 

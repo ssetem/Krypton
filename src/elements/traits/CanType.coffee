@@ -1,7 +1,7 @@
 module.exports = ->
 
-  class CanType
+  new class CanType
 
-    type: (text) ->
+    type:(val)->
+      console.log "type", @, val
 
-    

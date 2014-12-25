@@ -1,6 +1,6 @@
-module.exports = (Element, CanClick, HasText) ->
+module.exports = (Element, CanClick) ->
 
   class Button extends Element
 
-    @include HasText
-    @include CanClick
+    @traits CanClick
+

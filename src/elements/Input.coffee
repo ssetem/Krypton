@@ -1,6 +1,6 @@
-module.exports = (Element, HasText, CanType) ->
+
+module.exports = (Element, CanType, HasText) ->
 
   class Input extends Element
 
-    @include HasText
-    @include CanType
+    @traits CanType, HasText

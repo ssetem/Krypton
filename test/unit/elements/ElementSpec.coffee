@@ -1,7 +1,7 @@
 describe "Element", ->
 
   beforeEach ->
-    injector().inject (@Element, @CSSS, @QAS) =>
+    kryptonInjector().inject (@Element, @CSSS, @QAS) =>
       @elementA = new @Element()
       @elementB = new @Element(@elementA)
       @elementC = new @Element(@elementB)
