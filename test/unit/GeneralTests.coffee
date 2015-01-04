@@ -1,4 +1,4 @@
-describe.only "GeneralTests", ->
+describe "GeneralTests", ->
 
   beforeEach ->
     fixtureInjector().inject ($injector, @ChatFormComponent, @ElementPrinter)=>

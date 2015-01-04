@@ -14,5 +14,5 @@ describe "Element", ->
     expect(@elementC.getParents()).to.deep.equal([@elementA, @elementB])
 
   it "getElementSelector()", ->
-    expect(@elementC.getElementSelector()).to.equal(".elementA .elementB [data-qa='elementC'] ")
+    expect(@elementC.getElementSelector()).to.equal(".elementA .elementB [data-qa='elementC']")
 
