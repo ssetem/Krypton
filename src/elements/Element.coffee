@@ -23,7 +23,7 @@ module.exports = (Utils, FinderUtils) ->
       (@_components ?= []).push(name)
       @[name] = component.create(@, options)
 
-    getParents: ->
+    getParents: (self=false) ->
       hasParent = true
       context = @
       parents = []
@@ -35,13 +35,14 @@ module.exports = (Utils, FinderUtils) ->
 
       parents.reverse()
 
-    getElementSelector: ->
-      elements = @getParents()
-      elements.push(@)
-      css = ""
+      parents.push(@) if self
+      parents
 
-      css += element.selector.toCSS() for element in elements
-      css
+    getElementSelector: ->
+      elements = @getParents(true)
+      selectors = Utils.getSelectorsFromElements(elements)
+
+      Utils.getCSSFromSelectors(selectors)
 
     getElement: ->
       FinderUtils.getElement @getElementSelector()

@@ -18,7 +18,11 @@ module.exports = (Element) ->
     #   selector: 
     #   itemSelector:
     #   itemKind
+    #   selectedItemSelector
     
     constructor: ->
       super
+
+    selectedItem: ->
+
 
