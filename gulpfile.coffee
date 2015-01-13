@@ -12,8 +12,8 @@ gulp.task 'e2e', ()->
   gulp.src([paths.e2e])
     .pipe(protractor({
       configFile: "test/config/protractor.conf.js"
-    })) 
-    .on('error', (e) -> throw e )
+    }))
+    .on('error', (e) -> console.log e )
 
 gulp.task 'watch', ->
   gulp.watch(paths.e2e, ['e2e'])

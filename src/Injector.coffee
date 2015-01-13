@@ -5,7 +5,7 @@ module.exports = ()->
   ioc = spur.create("krypton")
 
   ioc.registerLibraries {
-
+    "_":"lodash"
   }
 
   ioc.registerDependencies {
@@ -16,6 +16,7 @@ module.exports = ()->
     "elements"
     "selectors"
     "core"
+    "experiments"
   ]
 
   ioc

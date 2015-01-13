@@ -1,6 +1,6 @@
 require('coffee-script');
-injector = require("../e2e/injector")
-
+global.injector = require("../../src/injector")
+var Server = require("../fixtures/app/Server")
 exports.config = {
 
   seleniumAddress: 'http://localhost:4444/wd/hub',
@@ -19,9 +19,10 @@ exports.config = {
   },
 
   onPrepare: function() {
-     injector().inject(function(Server) {
-        Server.start()
-     })
+    Server.start()
+     // injector().inject(function(Server) {
+     //    Server.start()
+     // })
   }
 
 };
