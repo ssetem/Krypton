@@ -9,3 +9,4 @@ module.exports = ->
 
 
   return (selector)-> new QAS(selector)
+

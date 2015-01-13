@@ -5,6 +5,3 @@ module.exports = ->
     type:(val)->
       console.log "type", @, val
 
-
-
-

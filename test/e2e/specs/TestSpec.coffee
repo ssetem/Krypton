@@ -31,8 +31,9 @@ describe 'angularjs homepage', ->
       @chatPage = k.ChatPage.create()
 
   it "should assert name", ->
+
+    # @chatPage.userForm.username.type("joe")
     browser.get 'http://localhost:3001/index.html'
     expect(@chatPage.title.getText())
       .toEqual("A simple chat system")
     @chatPage.userForm.username.type("Harrow")
-

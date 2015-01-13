@@ -4,3 +4,4 @@ module.exports = ->
 
     getText:()->
       console.log "getText", @
+
