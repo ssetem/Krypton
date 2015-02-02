@@ -23,6 +23,12 @@ module.exports = (Operation, _, expect)->
     run:()->
       @component.getElement()
 
+  class ops.type extends Operation
+    method:"type"
+
+    run:(value)->
+      @component.getElement()
+        .clear().sendKeys(value)
 
   class ops.is extends Operation
     method:"is"

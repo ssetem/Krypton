@@ -5,9 +5,4 @@ module.exports = (Component, DefaultOperations)->
 
     constructor:()->
       super
-      @registerOperationMethods "type"
-      @addOperations DefaultOperations.isEnabled
-
-    type:(value)->
-      @getElement()
-        .clear().sendKeys(value)
+      @addOperations DefaultOperations.isEnabled, DefaultOperations.type

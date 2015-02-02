@@ -50,7 +50,7 @@ describe 'angularjs homepage', ->
 
 
     browser.get 'http://localhost:3002/index.html'
-    @chatPage.title.expectText("A simple chat system2")
+    @chatPage.title.expectText("A simple chat system")
     @chatPage.userForm.sendAction.expectEnabled(false)
     @chatPage.userForm.username.type("Bob")
     @chatPage.userForm.username.expectIs("valid")
