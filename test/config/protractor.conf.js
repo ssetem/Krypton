@@ -5,7 +5,7 @@ exports.config = {
 
   seleniumAddress: 'http://localhost:4444/wd/hub',
   chromeDriver: '../../../selenium/chromedriver',
-  baseUrl: "http://localhost:3000/",
+  baseUrl: "http://localhost:3002/",
 
   specs: [
     '../e2e/**/*.coffee'
@@ -19,7 +19,7 @@ exports.config = {
   },
 
   onPrepare: function() {
-    Server.start()
+    Server.start(3002)
      // injector().inject(function(Server) {
      //    Server.start()
      // })

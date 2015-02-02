@@ -1,27 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="34661e24-cfdd-4507-8426-59af4353dec6" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/e2e/app/Server.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/e2e/app/client/app.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/e2e/app/client/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/e2e/app/client/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/e2e/injector.coffee" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/e2e/page-objects/ChatPage.coffee" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/e2e/page-objects/components/ChatBoxComponent.coffee" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/e2e/page-objects/components/ChatFormComponent.coffee" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/e2e/page-objects/components/UserFormComponent.coffee" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/elements/Button.coffee" afterPath="$PROJECT_DIR$/src/elements/Button.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/selectors/CSSS.coffee" afterPath="$PROJECT_DIR$/src/selectors/CSSS.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/elements/traits/CanClick.coffee" afterPath="$PROJECT_DIR$/src/elements/traits/CanClick.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/elements/traits/CanType.coffee" afterPath="$PROJECT_DIR$/src/elements/traits/CanType.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/elements/Element.coffee" afterPath="$PROJECT_DIR$/src/elements/Element.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/elements/traits/HasText.coffee" afterPath="$PROJECT_DIR$/src/elements/traits/HasText.coffee" />
+    <list default="true" id="68006156-1d8c-4a4e-83df-ea2f04c60a03" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/core/ElementPrinter.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/core/Utils.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/elements/Button.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/elements/Element.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/elements/FinderUtils.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/elements/Input.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/elements/ItemList.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/elements/Page.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/elements/traits/CanClick.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/elements/traits/CanType.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/elements/traits/HasText.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/selectors/CSSS.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/selectors/QAS.coffee" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/experiments/Experiments.coffee" afterPath="$PROJECT_DIR$/src/experiments/Experiments.coffee" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Injector.coffee" afterPath="$PROJECT_DIR$/src/Injector.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/elements/Input.coffee" afterPath="$PROJECT_DIR$/src/elements/Input.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/selectors/QAS.coffee" afterPath="$PROJECT_DIR$/src/selectors/QAS.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/app/Server.js" afterPath="$PROJECT_DIR$/test/fixtures/app/Server.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/e2e/specs/TestSpec.coffee" afterPath="$PROJECT_DIR$/test/e2e/specs/TestSpec.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/globals.js" afterPath="$PROJECT_DIR$/test/globals.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/config/protractor.conf.js" afterPath="$PROJECT_DIR$/test/config/protractor.conf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Krypton.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,51 +46,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Utils.coffee" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/core/Utils.coffee">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Injector.coffee" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Injector.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gulpfile.coffee" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gulpfile.coffee">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CanClick.coffee" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/elements/traits/CanClick.coffee">
+      <file leaf-file-name="ContainerManagement.coffee" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/spur-ioc/src/ContainerManagement.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="232" max-vertical-offset="960">
+              <caret line="38" column="2" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="2" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Element.coffee" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/elements/Element.coffee">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/spur-common/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Input.coffee" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/elements/Input.coffee">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="165">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -98,8 +89,28 @@
       <file leaf-file-name="TestSpec.coffee" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/e2e/specs/TestSpec.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.22664835" vertical-offset="0" max-vertical-offset="728">
-              <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.66480446" vertical-offset="648" max-vertical-offset="1185">
+              <caret line="67" column="18" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="135">
+              <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Experiments.coffee" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/experiments/Experiments.coffee">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1156" max-vertical-offset="2775">
+              <caret line="110" column="4" selection-start-line="110" selection-start-column="4" selection-end-line="110" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -113,8 +124,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/elements/Input.coffee" />
-        <option value="$PROJECT_DIR$/test/e2e/page-objects/ChatPage.coffee" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/experiments/Experiments.coffee" />
         <option value="$PROJECT_DIR$/test/e2e/specs/TestSpec.coffee" />
       </list>
     </option>
@@ -139,7 +150,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="1" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -237,47 +248,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="elements" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Krypton" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Krypton" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elements" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="traits" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Krypton" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Krypton" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
+              <option name="myItemId" value="experiments" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -287,9 +258,9 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="editorconfig.notification" value="Applied .editorconfig settings" />
     <property name="FullScreen" value="false" />
   </component>
   <component name="RunManager">
@@ -304,10 +275,10 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="34661e24-cfdd-4507-8426-59af4353dec6" name="Default" comment="" />
-      <created>1419424087791</created>
+      <changelist id="68006156-1d8c-4a4e-83df-ea2f04c60a03" name="Default" comment="" />
+      <created>1422902699963</created>
       <option name="number" value="Default" />
-      <updated>1419424087791</updated>
+      <updated>1422902699963</updated>
     </task>
     <servers />
   </component>
@@ -317,23 +288,23 @@
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2526455" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24947146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24947146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -357,23 +328,15 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/core/Utils.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="728">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Injector.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="728">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/elements/traits/CanClick.coffee">
+    <entry file="file://$PROJECT_DIR$/gulpfile.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="728">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -381,7 +344,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/elements/Element.coffee">
+    <entry file="file://$PROJECT_DIR$/node_modules/spur-ioc/src/ContainerManagement.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="232" max-vertical-offset="960">
+          <caret line="38" column="2" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/spur-common/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="728">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -389,18 +360,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/elements/Input.coffee">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="165">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="454">
+          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/experiments/Experiments.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1156" max-vertical-offset="2775">
+          <caret line="110" column="4" selection-start-line="110" selection-start-column="4" selection-end-line="110" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/e2e/specs/TestSpec.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22664835" vertical-offset="0" max-vertical-offset="728">
-          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.66480446" vertical-offset="648" max-vertical-offset="1185">
+          <caret line="67" column="18" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="18" />
           <folding />
         </state>
       </provider>

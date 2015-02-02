@@ -1,22 +1,14 @@
-spur = require "spur-ioc"
+spur           = require "spur-ioc"
+spurCommon     = require "spur-common"
 
 module.exports = ()->
 
   ioc = spur.create("krypton")
 
-  ioc.registerLibraries {
-    "_":"lodash"
-  }
-
-  ioc.registerDependencies {
-
-  }
+  ioc.merge(spurCommon())
 
   ioc.registerFolders __dirname, [
-    "elements"
-    "selectors"
-    "core"
-    "experiments"
+    "core", "elements"
   ]
 
   ioc

@@ -1,39 +1,73 @@
 describe 'angularjs homepage', ->
 
   beforeEach ->
-    injector().inject (@Experiments) =>
-      k = @Experiments
-      @k = k
-      class k.ChatForm extends k.Component
+    injector().inject (Component, Selector, Input, Button) =>
+
+
+      class ChatForm extends Component
         constructor:()->
           super
           @qa "chat-form"
-          @addComponent "message", k.Input.create().qa("message")
+          @addComponent "message", Input.create().qa("message")
+          @addComponent "sendAction", Button.create().css("#sendMessage")
 
-      class k.UserForm extends k.Component
-        selector:new k.qa("user-form")
+      class UserForm extends Component
+        selector:new Selector.qa("user-form")
 
         constructor:()->
           super
-          @addComponent "username", k.Input.create().qa("username")
-          @addComponent "sendAction", k.Input.create().qa("send-action")
+          @addComponent "username", Input.create().qa("username").states({valid:"ng-valid"})
+          @addComponent "sendAction", Button.create().qa("send-action")
 
-      class k.ChatPage extends k.Component
+      class TitleMixin
+        constructor:()->
+          @addComponent "title", Component.create().css("h4")
+
+      class ChatPage extends Component
+        @include TitleMixin
         name:"ChatPage"
-        selector:new k.qa("chat-page")
+        selector:new Selector.qa("chat-page")
         constructor:()->
           super
-          @addComponent "title", k.Component.create().css("h4")
-          @addComponent "chatForm", k.ChatForm.create()
-          @addComponent "userForm", k.UserForm.create()
+          @addComponent "chatForm", ChatForm.create()
+          @addComponent "userForm", UserForm.create()
+          @addComponent "messageList", Component.create().qa("messages")
 
 
-      @chatPage = k.ChatPage.create()
+      @chatPage = ChatPage.create()
 
   it "should assert name", ->
 
+    apis = []
+    walk = (C)->
+      for k, v of C._components
+        walk(v)
+
+      for k, v of C._operations
+        apis.push v.getObjectPath().api
+
+    walk @chatPage
+
+    console.log JSON.stringify apis, null, 2
+
+
+
     # @chatPage.userForm.username.type("joe")
-    browser.get 'http://localhost:3001/index.html'
+    browser.get 'http://localhost:3002/index.html'
+    # browser.pause()
     expect(@chatPage.title.getText())
       .toEqual("A simple chat system")
-    @chatPage.userForm.username.type("Harrow")
+    expect(@chatPage.userForm.sendAction.isEnabled())
+      .toBe(false)
+    @chatPage.userForm.username.type("Bob")
+    expect(@chatPage.userForm.username.is("valid"))
+      .toBe(true)
+    @chatPage.userForm.sendAction.click()
+    expect(@chatPage.chatForm.sendAction.isEnabled())
+      .toBe(false)
+    @chatPage.chatForm.message.type("Hi everyone")
+    @chatPage.chatForm.sendAction.click()
+    @chatPage.chatForm.message.type("Hi again")
+    @chatPage.chatForm.sendAction.click()
+
+

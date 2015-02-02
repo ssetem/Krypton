@@ -1,6 +1,13 @@
+module.exports = (Component, DefaultOperations)->
 
-module.exports = (Element, CanType, HasText) ->
+  class Input extends Component
+    name:"Input"
 
-  class Input extends Element
+    constructor:()->
+      super
+      @registerOperationMethods "type"
+      @addOperations DefaultOperations.isEnabled
 
-    @traits CanType, HasText
+    type:(value)->
+      @getElement()
+        .clear().sendKeys(value)

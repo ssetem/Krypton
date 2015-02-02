@@ -1,6 +1,7 @@
-module.exports = (Element, CanClick) ->
+module.exports = (DefaultOperations, Component)->
 
-  class Button extends Element
-
-    @traits CanClick
-
+  class Button extends Component
+    name:"Button"
+    constructor:()->
+      super
+      @addOperations DefaultOperations.isEnabled

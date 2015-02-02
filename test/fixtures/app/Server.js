@@ -36,8 +36,8 @@ testApp.configure(function() {
 });
 
 module.exports = {
-  start: function () {
-    testApp.listen(port);
+  start: function (optionalPort) {
+    testApp.listen(optionalPort || port);
   }
 }
 
