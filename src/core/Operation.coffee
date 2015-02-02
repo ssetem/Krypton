@@ -1,4 +1,4 @@
-module.exports = (Module)->
+module.exports = (Module, expect)->
 
   class Operation extends Module
 
@@ -6,15 +6,25 @@ module.exports = (Module)->
       super
       @component
 
-    setComponent:(@component)-> @
+    setComponent:(@component)->
+      @onComponentRegistered()
+      @
+
+    onComponentRegistered:()->
 
     run:()->
       @component.getElement()["#{@method}"]()
 
+    expectRun:(val=true)=>
+      expect(@run()).to.eventually.equal(val)
+
     getObjectPath:()->{
       selector:@getSelector().join(" ")
-      api:@getPath().join(".")
+      api:@getApiPath()
     }
+
+    getApiPath:()->
+      @getPath().join(".")
 
     getPath:()->
       @component.getPath().concat [@method]

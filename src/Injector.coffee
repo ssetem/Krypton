@@ -8,7 +8,7 @@ module.exports = ()->
   ioc.merge(spurCommon())
 
   ioc.registerFolders __dirname, [
-    "core", "elements"
+    "core", "elements", "assertions"
   ]
 
   ioc

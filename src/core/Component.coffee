@@ -9,22 +9,7 @@ module.exports = (Module, Operation, DefaultOperations, Selector, _)->
       super
       @parent
       @name
-      @_states = {}
-      @addOperations ops.isDisplayed, ops.click, ops.getText, ops.get
-
-
-    states:(states)->
-      _.extend(@_states, states)
-      @
-
-    is:(expectedState)->
-      stateClass = @_states[expectedState]
-      unless stateClass
-        throw new Error("Could not find state for: #{expectedState}")
-
-      @getElement().getAttribute("class").then (classNames)->
-        !!(classNames.split(" ").indexOf(stateClass))
-
+      @addOperations ops.isDisplayed, ops.click, ops.getText, ops.get, ops.is
 
     qa:(value)->
       @selector = new Selector.qa(value)
@@ -59,6 +44,10 @@ module.exports = (Module, Operation, DefaultOperations, Selector, _)->
       method = @[operation.method] = ()->
         operation.run.apply(operation, arguments)
       method.operation = operation
+      if operation.expectMethod
+        expectMethod = @[operation.expectMethod] = ()->
+          operation.expectRun.apply(operation, arguments)
+        expectMethod.operation = operation
 
     registerOperationMethods:(methods...)->
       for method in methods

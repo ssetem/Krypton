@@ -24,7 +24,9 @@
     "coffee-script": "^1.9.0",
     "cli": "0.6.5",
     "request": "latest",
-    "sinon": "latest"
+    "sinon": "latest",
+    "chai": "^1.10.0",
+    "chai-as-promised": "^4.1.1"
   },
   "scripts": {
     "test": "mocha --opts ./test/mocha.opts ./test/unit",

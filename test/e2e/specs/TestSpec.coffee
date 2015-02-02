@@ -48,21 +48,16 @@ describe 'angularjs homepage', ->
 
     walk @chatPage
 
-    # console.log JSON.stringify apis, null, 2
-
 
     browser.get 'http://localhost:3002/index.html'
-    expect(@chatPage.title.getText())
-      .toEqual("A simple chat system")
-    expect(@chatPage.userForm.sendAction.isEnabled())
-      .toBe(false)
+    @chatPage.title.expectText("A simple chat system2")
+    @chatPage.userForm.sendAction.expectEnabled(false)
     @chatPage.userForm.username.type("Bob")
-    expect(@chatPage.userForm.username.is("valid"))
-      .toBe(true)
+    @chatPage.userForm.username.expectIs("valid")
     @chatPage.userForm.sendAction.click()
-    expect(@chatPage.chatForm.sendAction.isEnabled())
-      .toBe(false)
+    @chatPage.chatForm.sendAction.expectEnabled(false)
     @chatPage.chatForm.message.type("Hi everyone")
+    @chatPage.chatForm.sendAction.expectEnabled(true)
     @chatPage.chatForm.sendAction.click()
     @chatPage.chatForm.message.type("Hi again")
     @chatPage.chatForm.sendAction.click()
