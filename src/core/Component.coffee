@@ -5,11 +5,10 @@ module.exports = (Module, Operation, DefaultOperations, Selector, _)->
 
   class Component extends Module
 
-    constructor:(options)->
+    constructor:()->
       super
       @parent
       @name
-      @selector = options.selector or @selector
       @_states = {}
       @addOperations ops.isDisplayed, ops.click, ops.getText, ops.get
 
@@ -42,7 +41,8 @@ module.exports = (Module, Operation, DefaultOperations, Selector, _)->
       _.reduce(@selector.toLocators(), reducer, nullElement)
 
 
-    addComponent:(name, component)->
+    component:(name, componentConstructor, options)->
+      component = componentConstructor.create(options)
       component.parent = @
       component.name = name
       component.selector?.setParent(@selector)
@@ -73,5 +73,13 @@ module.exports = (Module, Operation, DefaultOperations, Selector, _)->
     getPath:()->
       (@parent?.getPath() or []).concat [@name]
 
-    @create:(selector)->
-      comp = new @({selector})
+    @create:(builder)->
+      comp = new @()
+      for own k,v of builder
+        prop = comp[k]
+        if _.isFunction(prop)
+          comp[k](v)
+        else
+          comp[k] = v
+      comp
+

@@ -8,20 +8,20 @@ describe 'angularjs homepage', ->
         constructor:()->
           super
           @qa "chat-form"
-          @addComponent "message", Input.create().qa("message")
-          @addComponent "sendAction", Button.create().css("#sendMessage")
+          @component "message", Input, qa:"message"
+          @component "sendAction", Button, css:"#sendMessage"
 
       class UserForm extends Component
         selector:new Selector.qa("user-form")
 
         constructor:()->
           super
-          @addComponent "username", Input.create().qa("username").states({valid:"ng-valid"})
-          @addComponent "sendAction", Button.create().qa("send-action")
+          @component "username", Input, qa:"username", states:{valid:"ng-valid"}
+          @component "sendAction", Button, qa:"send-action"
 
       class TitleMixin
         constructor:()->
-          @addComponent "title", Component.create().css("h4")
+          @component "title", Component, css:"h4"
 
       class ChatPage extends Component
         @include TitleMixin
@@ -29,9 +29,9 @@ describe 'angularjs homepage', ->
         selector:new Selector.qa("chat-page")
         constructor:()->
           super
-          @addComponent "chatForm", ChatForm.create()
-          @addComponent "userForm", UserForm.create()
-          @addComponent "messageList", Component.create().qa("messages")
+          @component "chatForm", ChatForm
+          @component "userForm", UserForm
+          @component "messageList", Component, qa:"messages"
 
 
       @chatPage = ChatPage.create()
@@ -48,13 +48,10 @@ describe 'angularjs homepage', ->
 
     walk @chatPage
 
-    console.log JSON.stringify apis, null, 2
+    # console.log JSON.stringify apis, null, 2
 
 
-
-    # @chatPage.userForm.username.type("joe")
     browser.get 'http://localhost:3002/index.html'
-    # browser.pause()
     expect(@chatPage.title.getText())
       .toEqual("A simple chat system")
     expect(@chatPage.userForm.sendAction.isEnabled())
