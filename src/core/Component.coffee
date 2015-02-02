@@ -9,7 +9,10 @@ module.exports = (Module, Operation, DefaultOperations, Selector, _)->
       super
       @parent
       @name
-      @addOperations ops.isDisplayed, ops.click, ops.getText, ops.get, ops.is
+      @addOperations(
+        ops.isDisplayed, ops.click, ops.is
+        ops.getText, ops.get, ops.waitUntilPresent
+      )
 
     qa:(value)->
       @selector = new Selector.qa(value)
@@ -42,7 +45,7 @@ module.exports = (Module, Operation, DefaultOperations, Selector, _)->
       @_operations ?= {}
       @_operations[operation.method] = operation
       method = @[operation.method] = ()->
-        operation.run.apply(operation, arguments)
+        operation.executeRun.apply(operation, arguments)
       method.operation = operation
       if operation.expectMethod
         expectMethod = @[operation.expectMethod] = ()->

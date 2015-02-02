@@ -2,6 +2,10 @@ module.exports = (Operation, _, expect)->
 
   ops = {}
 
+  class ops.isPresent extends Operation
+    method:"isPresent"
+    expectMethod:"expectPresent"
+
   class ops.isDisplayed extends Operation
     method:"isDisplayed"
     expectMethod:"expectDisplayed"
@@ -16,6 +20,15 @@ module.exports = (Operation, _, expect)->
   class ops.getText extends Operation
     method:"getText"
     expectMethod:"expectText"
+
+  class ops.waitUntilPresent extends Operation
+    method:"waitUntilPresent"
+
+    run:(timeout = 5000)->
+      (browser.driver.wait =>
+        @component.getElement().isPresent()
+      ,timeout)
+
 
   class ops.get extends Operation
     method:"get"
@@ -44,7 +57,7 @@ module.exports = (Operation, _, expect)->
     run:(expectedState)->
       stateClass = @_states[expectedState]
       unless stateClass
-        throw new Error("Could not find state for: #{expectedState}")
+        throw new Error("#{@getApiPath()}: Could not find state for: #{expectedState}")
 
       @component.getElement().getAttribute("class").then (classNames)->
         !!(classNames.split(" ").indexOf(stateClass))

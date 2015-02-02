@@ -6,17 +6,25 @@ module.exports = (Module, expect)->
       super
       @component
 
+
     setComponent:(@component)->
       @onComponentRegistered()
       @
 
     onComponentRegistered:()->
 
+    executeRun:()->
+      @run.apply(@, arguments)
+        .then null, (e)=>
+          e.message = @getApiPath() + ": " + e.message
+          throw e
+
     run:()->
       @component.getElement()["#{@method}"]()
 
+
     expectRun:(val=true)=>
-      expect(@run()).to.eventually.equal(val)
+      expect(@executeRun(), @getApiPath()).to.eventually.equal(val)
 
     getObjectPath:()->{
       selector:@getSelector().join(" ")

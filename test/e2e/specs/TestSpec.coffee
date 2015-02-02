@@ -10,6 +10,7 @@ describe 'angularjs homepage', ->
           @qa "chat-form"
           @component "message", Input, qa:"message"
           @component "sendAction", Button, css:"#sendMessage"
+          @component "missingAction", Button, css:"#missingAction"
 
       class UserForm extends Component
         selector:new Selector.qa("user-form")
@@ -50,6 +51,8 @@ describe 'angularjs homepage', ->
 
 
     browser.get 'http://localhost:3002/index.html'
+    @chatPage.title.waitUntilPresent()
+    @chatPage.chatForm.missingAction.waitUntilPresent()
     @chatPage.title.expectText("A simple chat system")
     @chatPage.userForm.sendAction.expectEnabled(false)
     @chatPage.userForm.username.type("Bob")
